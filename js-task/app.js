@@ -115,7 +115,7 @@
 
 
 
-
+//27.04.2023
 
 //***************#1*************
 
@@ -134,7 +134,37 @@
 
 
 
+//****************#2************
+// function genNum(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(genNum(1, 100)); // random int between 1 to 100
+
+
+
+
+
+//*********************#3**************
+
+// function addNumber(...numbers) {
+//   return numbers.reduce((acc, cur) => acc + cur);
+// }
+
+// console.log(addNumber(2, 10, 10, 20, 13, 15)); // 70
+
+
   //********************#4*************
   // const list = [[2,3,4],[6,4,9],[34,6,4]];
 // const flattenedList = list.flat();
 // console.log(flattenedList); // [2, 3, 4, 6, 4, 9, 34, 6, 4]
+
+
+
+//***********************#5*************
+
+// function celsiusToFahrenheit(celsius) {
+//   return (celsius * 9/5) + 32;
+// }
+
+// console.log(celsiusToFahrenheit(25)); // 77
