@@ -168,3 +168,91 @@
 // }
 
 // console.log(celsiusToFahrenheit(25)); // 77
+ 
+
+
+
+
+
+
+
+
+
+
+//OPP
+// const product = {
+//   name: "Acer",
+//   price: 1500
+// }
+// product.price= product.price-200;
+
+// console.log(product)
+
+
+
+
+
+
+
+
+
+
+
+
+// let ingredients_list = ["noodles", { list: ["eggs", "flour", "water"] }];
+// let ingredients_list_deepcopy = JSON.parse(JSON.stringify(ingredients_list));
+// Change the value of the 'list' property in ingredients_list_deepcopy.
+// ingredients_list_deepcopy[1].list = ["rice flour", "water"];
+// The 'list' property does not change in ingredients_list.
+// console.log(ingredients_list[1].list);
+// Array(3) [ "eggs", "flour", "water" ]
+
+
+
+
+// //***********************#1*******************
+
+// function prop2Taker(obj) {
+//   return obj['prop-2'];
+// }
+
+// console.log(prop2Taker({  one: 1,  'prop-2': 2}))  // 2
+// console.log(prop2Taker({  'prop-2': 'two',  prop: 'test'}))  // 'two'
+
+
+
+// //**************************#2******************** 
+
+// function propertyTaker(obj, propertyName) {
+//   return obj[propertyName];
+// }
+// console.log(propertyTaker({ continent: 'Asia', country: 'Japan' }, 'continent')); // 'Asia'
+// console.log(propertyTaker({ country: 'Sweden', continent: 'Europe' }, 'country')); // 'Sweden'
+// console.log(propertyTaker({ name:'ali', age:12 }, 'name')); // 'ali'
+
+
+
+// //******************************#3*********************** 
+// function existsAndTruthy(obj, propertyName) {
+//   return obj.hasOwnProperty(propertyName) && Boolean(obj[propertyName]);
+// }
+
+// console.log(existsAndTruthy({a:1,b:2,c:3},'b')); // true
+// console.log(existsAndTruthy({x:'a',y:null,z:'c'},'y')); // false (obyektde 'y' var amma falsy-dir ona görə false)
+// console.log(existsAndTruthy({x:'a',b:'b',z:undefined},'z')); // false (obyektde 'z' yoxdur ona görə false)
+
+
+
+
+// //*************************************#4*******************************
+
+// let name = prompt("Mehsulun adini daxil edin:");
+// let price = prompt("Mehsulun qiymetini daxil edin:");
+
+// let isDiscounted = confirm("Endirim varmi?");
+
+// if (isDiscounted) {
+//     price *= 0.8;
+// }
+
+// console.log(name + " - " + price);
