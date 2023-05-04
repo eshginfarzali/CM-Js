@@ -50,12 +50,6 @@
 
 // console.log(fibonacci(10));
 
-
-
-
-
-
-
 // let balance = 500;
 // let numPasses = 3;
 // let pass = 1234;
@@ -74,30 +68,16 @@
 //   }
 // }
 
-
-
-
-
 // function sum(a, b){
 //   console.log(a+b)
 // }
 
 // sum(12, 23  )
 
-
-
-
-
-
 // function pow(x , n){
 // return x**n
 // }
 // console.log(pow(3, 4))
-
-
-
-
-
 
 // function formalMeet(name , gender){
 //   if(gender==="m"){
@@ -110,10 +90,6 @@
 
 // formalMeet("Eshgin", "m")
 // formalMeet("Pakito", "w")
-
-
-
-
 
 //27.04.2023
 
@@ -129,10 +105,8 @@
 //     }
 //     return rev;
 //   }
-  
+
 //   console.log(reverseNum(123)); // 321
-
-
 
 //****************#2************
 // function genNum(min, max) {
@@ -140,10 +114,6 @@
 // }
 
 // console.log(genNum(1, 100)); // random int between 1 to 100
-
-
-
-
 
 //*********************#3**************
 
@@ -153,13 +123,10 @@
 
 // console.log(addNumber(2, 10, 10, 20, 13, 15)); // 70
 
-
-  //********************#4*************
-  // const list = [[2,3,4],[6,4,9],[34,6,4]];
+//********************#4*************
+// const list = [[2,3,4],[6,4,9],[34,6,4]];
 // const flattenedList = list.flat();
 // console.log(flattenedList); // [2, 3, 4, 6, 4, 9, 34, 6, 4]
-
-
 
 //***********************#5*************
 
@@ -168,16 +135,6 @@
 // }
 
 // console.log(celsiusToFahrenheit(25)); // 77
- 
-
-
-
-
-
-
-
-
-
 
 //OPP
 // const product = {
@@ -188,17 +145,6 @@
 
 // console.log(product)
 
-
-
-
-
-
-
-
-
-
-
-
 // let ingredients_list = ["noodles", { list: ["eggs", "flour", "water"] }];
 // let ingredients_list_deepcopy = JSON.parse(JSON.stringify(ingredients_list));
 // Change the value of the 'list' property in ingredients_list_deepcopy.
@@ -206,9 +152,6 @@
 // The 'list' property does not change in ingredients_list.
 // console.log(ingredients_list[1].list);
 // Array(3) [ "eggs", "flour", "water" ]
-
-
-
 
 // //***********************#1*******************
 
@@ -219,9 +162,7 @@
 // console.log(prop2Taker({  one: 1,  'prop-2': 2}))  // 2
 // console.log(prop2Taker({  'prop-2': 'two',  prop: 'test'}))  // 'two'
 
-
-
-// //**************************#2******************** 
+// //**************************#2********************
 
 // function propertyTaker(obj, propertyName) {
 //   return obj[propertyName];
@@ -230,9 +171,7 @@
 // console.log(propertyTaker({ country: 'Sweden', continent: 'Europe' }, 'country')); // 'Sweden'
 // console.log(propertyTaker({ name:'ali', age:12 }, 'name')); // 'ali'
 
-
-
-// //******************************#3*********************** 
+// //******************************#3***********************
 // function existsAndTruthy(obj, propertyName) {
 //   return obj.hasOwnProperty(propertyName) && Boolean(obj[propertyName]);
 // }
@@ -240,9 +179,6 @@
 // console.log(existsAndTruthy({a:1,b:2,c:3},'b')); // true
 // console.log(existsAndTruthy({x:'a',y:null,z:'c'},'y')); // false (obyektde 'y' var amma falsy-dir ona görə false)
 // console.log(existsAndTruthy({x:'a',b:'b',z:undefined},'z')); // false (obyektde 'z' yoxdur ona görə false)
-
-
-
 
 // //*************************************#4*******************************
 
@@ -256,3 +192,68 @@
 // }
 
 // console.log(name + " - " + price);
+
+//**************************************************03.05.2023**************************** */
+
+//**********************************#string--concat***********************
+
+// let name = prompt("enter is name:")
+// let surname = prompt("enter is surname:")
+
+// console.log(name.concat(" "+ surname))
+
+//************************#strin -inculdes**********************************
+// const sentence = "there is a hidden word on this sentence"
+// const sentenceTwo = "Everyting is clear in this sentence"
+// const isHidden = (word)=> word.inculdes("hidden")
+// console.log(isHidden(sentence))
+// console.log(isHidden(sentenceTwo))
+
+//*************************#string- replaceAll******************************
+// const fixClassName = (p1, p2) => p1.replaceAll(" ", p2)
+// console.log(fixClassName("green btn", "-"))
+// console.log(fixClassName("green btn button", "_"))
+
+const date = new Date();
+
+let year = date.getFullYear(),
+    month = date.getMonth(),
+    day = date.getDate(),
+    hour = date.getHours(),
+    minute = date.getMinutes(),
+    second = date.getSeconds(),
+    dayNumber = date.getDay()
+
+    let months = [
+      'Yanvar',
+      'Fevral',
+      'Mart',
+      'Aprel',
+      'May',
+      'İyun',
+      'İyul',
+      'Avqust',
+      'Sentyabr',
+      'Oktyabr',
+      'Noyabr',
+      'Dekabr'
+ ]
+
+    let days =[
+      'Bazar',
+      'Bazarertəsi',
+      'Çərşənbə axşamı',
+      'Çərşənbə',
+      'Cümə axşamı',
+      'Cümə',
+      'Şənbə'
+    ]
+
+   let humanReadableDate = `${day} ${months[month]} ${year}, ${days[dayNumber]}, ${hour}:${minute}:${second}` 
+
+   console.log(humanReadableDate)
+
+   let history = document.getElementById('history')
+   .innerHTML=`${humanReadableDate}`
+   
+
