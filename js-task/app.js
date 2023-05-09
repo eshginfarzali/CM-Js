@@ -214,46 +214,60 @@
 // console.log(fixClassName("green btn", "-"))
 // console.log(fixClassName("green btn button", "_"))
 
-const date = new Date();
 
-let year = date.getFullYear(),
-    month = date.getMonth(),
-    day = date.getDate(),
-    hour = date.getHours(),
-    minute = date.getMinutes(),
-    second = date.getSeconds(),
-    dayNumber = date.getDay()
 
-    let months = [
-      'Yanvar',
-      'Fevral',
-      'Mart',
-      'Aprel',
-      'May',
-      'İyun',
-      'İyul',
-      'Avqust',
-      'Sentyabr',
-      'Oktyabr',
-      'Noyabr',
-      'Dekabr'
- ]
 
-    let days =[
-      'Bazar',
-      'Bazarertəsi',
-      'Çərşənbə axşamı',
-      'Çərşənbə',
-      'Cümə axşamı',
-      'Cümə',
-      'Şənbə'
-    ]
 
-   let humanReadableDate = `${day} ${months[month]} ${year}, ${days[dayNumber]}, ${hour}:${minute}:${second}` 
 
-   console.log(humanReadableDate)
 
-   let history = document.getElementById('history')
-   .innerHTML=`${humanReadableDate}`
+
+
+
+//********************************#date**************** */
+
+// const date = new Date();
+
+// let year = date.getFullYear(),
+//     month = date.getMonth(),
+//     day = date.getDate(),
+//     hour = date.getHours(),
+//     minute = date.getMinutes(),
+//     second = date.getSeconds(),
+//     dayNumber = date.getDay()
+
+//     let months = [
+//       'Yanvar',
+//       'Fevral',
+//       'Mart',
+//       'Aprel',
+//       'May',
+//       'İyun',
+//       'İyul',
+//       'Avqust',
+//       'Sentyabr',
+//       'Oktyabr',
+//       'Noyabr',
+//       'Dekabr'
+//  ]
+
+//     let days =[
+//       'Bazar',
+//       'Bazarertəsi',
+//       'Çərşənbə axşamı',
+//       'Çərşənbə',
+//       'Cümə axşamı',
+//       'Cümə',
+//       'Şənbə'
+//     ]
+
+//    let humanReadableDate = `${day} ${months[month]} ${year}, ${days[dayNumber]}, ${hour}:${minute}:${second}` 
+
+//    console.log(humanReadableDate)
+
+//    let history = document.getElementById('history')
+//    .innerHTML=`${humanReadableDate}`
    
+
+
+
 
