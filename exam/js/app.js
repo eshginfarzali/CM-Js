@@ -13,7 +13,6 @@ function showDividends(num) {
     }
     return dividends;
   }
-  
   console.log(showDividends(50)); 
   console.log(showDividends(70)); 
   console.log(showDividends(85));
