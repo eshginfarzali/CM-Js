@@ -1,3 +1,9 @@
+// Show number's dividends from 100 to 1000.
+// Input | Output
+// 50      | 100, 150, 200, 250, 300 ... 950
+// 70      | 140 , 210, 280, 980 ...
+// 85      | 170, 255, 340, ... 935
+
 function showDividends(num) {
     let dividends = [];
     for (let i = 100; i <= 1000; i++) {
@@ -8,7 +14,6 @@ function showDividends(num) {
     return dividends;
   }
   
-
   console.log(showDividends(50)); 
   console.log(showDividends(70)); 
   console.log(showDividends(85));
@@ -18,7 +23,11 @@ function showDividends(num) {
   
   
 
-
+//   We need to swap the case of all letters in a string. Provide us a function for doing it.
+//   swapCase(string) : string
+//   Input            |     Output
+//   aBcD             |     AbCd
+//   jAvaScRIPt       |     JaVAsCripT
 
 //   function swapCase(str) {
 //     let empty = '';
@@ -48,7 +57,9 @@ function showDividends(num) {
 
 
 
-
+//   Show the count of the both odd and even numbers from array.
+//   let numbers = [1,4,7,8,3,5,0,2,4,6,12,15,18,46,45,48,97,84]
+//   For example, countEvensAndOdds(numbers);   // evens: 12, odds: 13
 
 let numbers = [1,4,7,8,3,5,0,2,4,6,12,15,18,46,45,48,97,84];
 let evenCount = 0;
@@ -64,8 +75,7 @@ for (let i = 0; i < num.length; i++) {
   }
 }
 
-console.log(`Number of even numbers: ${evenCount}`);
-console.log(`Number of odd numbers: ${oddCount}`);
+return { evenCount , oddCount }
 }
 
-showNum(numbers)
+console.log(showNum(numbers))
