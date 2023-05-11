@@ -445,27 +445,59 @@ const users = [
 
 //******************************************************#map******************** */
 
-const email = users.map((user)=> user.email)
+// const email = users.map((user)=> user.email)
   
-console.log(email)
+// console.log(email)
 
-const company = users.map((user)=> user)
+// const company = users.map((user)=> user)
   
-console.log(company)
+// console.log(company)
 
 
 
-function capitalizeWords(str) {
-  return str
-    .toLowerCase()
-    .split(' ')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
-}
+// function capitalizeWords(str) {
+//   return str
+//     .toLowerCase()
+//     .split(' ')
+//     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(' ');
+// }
 
-// Hello My Name Is Harry
-console.log(capitalizeWords('HELLO my name is harry'));
+//  Hello My Name Is Harry
+// console.log(capitalizeWords('HELLO my name is harry'));
 
-// JavaScript And TypeScript
-console.log(capitalizeWords('JAVASCRIPT AND TYPESCRIPT'));
+//  JavaScript And TypeScript
+// console.log(capitalizeWords('JAVASCRIPT AND TYPESCRIPT'));
 
+
+//*******************************************************#11.05.2023----Task1********************
+// let arrNumber =[1,2,3,4,5,6,7,8,9,10]
+// let newArr =[]
+// arrNumber.forEach((num)=>newArr.push(num**2))
+// console.log(newArr)
+
+//*******************************************************#Task2*****************************
+
+// let arrNumber =[1,2,3,4,5,6,7,8,9,10]
+// let userNum = prompt('enter the number:')
+
+
+// let someNum = arrNumber.some((mmm)=>{
+//   return mmm.toString().includes(userNum)
+
+// })
+// console.log(someNum)
+
+
+// let someNum =arrNumber.some((userNum)=>{
+// return userNum
+// })
+// console.log(someNum)
+
+
+let arrNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let userNum = 2;
+
+let isNumInArray = arrNumber.some(number => number === userNum);
+
+console.log(isNumInArray);
