@@ -2,14 +2,11 @@
 
 //*********************************************#1******************* */
 
-
 // let arr = new Array(5);
 // for (let i = 0; i < arr.length; i++) {
 //   arr[i] = Number(prompt(`Enter a number for index ${i}:`));
 // }
 // console.log(arr);
-
-
 
 //******************************************#2********************* */
 
@@ -23,7 +20,6 @@
 
 // let arr = [2, 3, 4, 5];
 // multiplyArrayElements(arr); // 120
-
 
 //*******************************************#3*************************** */
 
@@ -39,8 +35,6 @@
 // console.log(multiply(5, 10)); // 50
 // console.log(multiply(1, 2, 3, 4, 5)); // 120
 
-
-
 //*******************************************#4******************************* */
 
 // function convertElementsToItsLengths(arr) {
@@ -53,10 +47,9 @@
 
 // let arr = ["apple", "banana", "orange", "kiwi"];
 // console.log(convertElementsToItsLengths(arr));
- // [5, 6, 6, 4]
+// [5, 6, 6, 4]
 
-
- //******************************************************#5******************************** */
+//******************************************************#5******************************** */
 
 //  function findMax(arr) {
 //   let max = arr[0];
@@ -70,8 +63,6 @@
 
 // let arr = [2, 5, 1, 9, 4];
 // console.log(findMax(arr)); // 9
-
-
 
 //********************************************#6********************** */
 
@@ -90,7 +81,6 @@
 
 //*************************************#7 ********************/
 
-
 // let messages = [
 //   {sender: "John", receiver: "Jane", hasRead: true},
 //   {sender: "Jane", receiver: "John", hasRead: false},
@@ -104,25 +94,17 @@
 // }
 
 // console.log(getReadMessages(messages));
- // [{sender: "John", receiver: "Jane", hasRead: true}, {sender: "Mike", receiver: "Jane", hasRead: true}, {sender: "John", receiver: "Mike", hasRead: true}]
+// [{sender: "John", receiver: "Jane", hasRead: true}, {sender: "Mike", receiver: "Jane", hasRead: true}, {sender: "John", receiver: "Mike", hasRead: true}]
 
-
-
- //*******************************************#8*********************** */
+//*******************************************#8*********************** */
 
 //  function cloneArray(arr) {
 //     return arr.slice();
 //   }
-  
+
 //   let arr = [1, 2, 3, 4, 5];
 //   let clonedArr = cloneArray(arr);
 //   console.log(clonedArr); // [1, 2, 3, 4, 5]
-
-
-
-
-
-
 
 //*************************************************#9************************ */
 
@@ -133,10 +115,9 @@
 //     }
 //     return convertedArr;
 //   }
-  
+
 //   let arr = [1, 2, 3, 4, 5];
 //   console.log(convertMilesToKilometers(arr)); // [1.60934, 3.21868, 4.82802, 6.43736, 8.0467]
-
 
 //******************************************************#10*****************/
 
@@ -149,10 +130,9 @@
 //     }
 //     return evenNumbers;
 //   }
-  
+
 //   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   console.log(getEvenNumbers(arr)); // [2, 4, 6, 8, 10]
-
 
 //****************************************************#11**************** */
 
@@ -161,247 +141,245 @@
 // return alphabet.indexOf(letter.toLowerCase()) + 1;
 //     return alphabet[i-1];
 //   }
-  
+
 //   console.log(getAlphabetIndex(1)); // a
 //   console.log(getAlphabetIndex(26)); // z
-//   console.log(getAlphabetIndex(13)); // m  
-
-
+//   console.log(getAlphabetIndex(13)); // m
 
 //***************************************#forEach loop yazdirir callbackfun qebul edir element, index, arr(referance) qaytarir*/
 
 const users = [
   {
-    "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
-    "address": {
-      "street": "Kulas Light",
-      "suite": "Apt. 556",
-      "city": "Gwenborough",
-      "zipcode": "92998-3874",
-      "geo": {
-        "lat": "-37.3159",
-        "lng": "81.1496"
-      }
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz",
+    address: {
+      street: "Kulas Light",
+      suite: "Apt. 556",
+      city: "Gwenborough",
+      zipcode: "92998-3874",
+      geo: {
+        lat: "-37.3159",
+        lng: "81.1496",
+      },
     },
-    "phone": "1-770-736-8031 x56442",
-    "website": "hildegard.org",
-    "company": {
-      "name": "Romaguera-Crona",
-      "catchPhrase": "Multi-layered client-server neural-net",
-      "bs": "harness real-time e-markets"
-    }
+    phone: "1-770-736-8031 x56442",
+    website: "hildegard.org",
+    company: {
+      name: "Romaguera-Crona",
+      catchPhrase: "Multi-layered client-server neural-net",
+      bs: "harness real-time e-markets",
+    },
   },
   {
-    "id": 2,
-    "name": "Ervin Howell",
-    "username": "Antonette",
-    "email": "Shanna@melissa.tv",
-    "address": {
-      "street": "Victor Plains",
-      "suite": "Suite 879",
-      "city": "Wisokyburgh",
-      "zipcode": "90566-7771",
-      "geo": {
-        "lat": "-43.9509",
-        "lng": "-34.4618"
-      }
+    id: 2,
+    name: "Ervin Howell",
+    username: "Antonette",
+    email: "Shanna@melissa.tv",
+    address: {
+      street: "Victor Plains",
+      suite: "Suite 879",
+      city: "Wisokyburgh",
+      zipcode: "90566-7771",
+      geo: {
+        lat: "-43.9509",
+        lng: "-34.4618",
+      },
     },
-    "phone": "010-692-6593 x09125",
-    "website": "anastasia.net",
-    "company": {
-      "name": "Deckow-Crist",
-      "catchPhrase": "Proactive didactic contingency",
-      "bs": "synergize scalable supply-chains"
-    }
+    phone: "010-692-6593 x09125",
+    website: "anastasia.net",
+    company: {
+      name: "Deckow-Crist",
+      catchPhrase: "Proactive didactic contingency",
+      bs: "synergize scalable supply-chains",
+    },
   },
   {
-    "id": 3,
-    "name": "Clementine Bauch",
-    "username": "Samantha",
-    "email": "Nathan@yesenia.net",
-    "address": {
-      "street": "Douglas Extension",
-      "suite": "Suite 847",
-      "city": "McKenziehaven",
-      "zipcode": "59590-4157",
-      "geo": {
-        "lat": "-68.6102",
-        "lng": "-47.0653"
-      }
+    id: 3,
+    name: "Clementine Bauch",
+    username: "Samantha",
+    email: "Nathan@yesenia.net",
+    address: {
+      street: "Douglas Extension",
+      suite: "Suite 847",
+      city: "McKenziehaven",
+      zipcode: "59590-4157",
+      geo: {
+        lat: "-68.6102",
+        lng: "-47.0653",
+      },
     },
-    "phone": "1-463-123-4447",
-    "website": "ramiro.info",
-    "company": {
-      "name": "Romaguera-Jacobson",
-      "catchPhrase": "Face to face bifurcated interface",
-      "bs": "e-enable strategic applications"
-    }
+    phone: "1-463-123-4447",
+    website: "ramiro.info",
+    company: {
+      name: "Romaguera-Jacobson",
+      catchPhrase: "Face to face bifurcated interface",
+      bs: "e-enable strategic applications",
+    },
   },
   {
-    "id": 4,
-    "name": "Patricia Lebsack",
-    "username": "Karianne",
-    "email": "Julianne.OConner@kory.org",
-    "address": {
-      "street": "Hoeger Mall",
-      "suite": "Apt. 692",
-      "city": "South Elvis",
-      "zipcode": "53919-4257",
-      "geo": {
-        "lat": "29.4572",
-        "lng": "-164.2990"
-      }
+    id: 4,
+    name: "Patricia Lebsack",
+    username: "Karianne",
+    email: "Julianne.OConner@kory.org",
+    address: {
+      street: "Hoeger Mall",
+      suite: "Apt. 692",
+      city: "South Elvis",
+      zipcode: "53919-4257",
+      geo: {
+        lat: "29.4572",
+        lng: "-164.2990",
+      },
     },
-    "phone": "493-170-9623 x156",
-    "website": "kale.biz",
-    "company": {
-      "name": "Robel-Corkery",
-      "catchPhrase": "Multi-tiered zero tolerance productivity",
-      "bs": "transition cutting-edge web services"
-    }
+    phone: "493-170-9623 x156",
+    website: "kale.biz",
+    company: {
+      name: "Robel-Corkery",
+      catchPhrase: "Multi-tiered zero tolerance productivity",
+      bs: "transition cutting-edge web services",
+    },
   },
   {
-    "id": 5,
-    "name": "Chelsey Dietrich",
-    "username": "Kamren",
-    "email": "Lucio_Hettinger@annie.ca",
-    "address": {
-      "street": "Skiles Walks",
-      "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263",
-      "geo": {
-        "lat": "-31.8129",
-        "lng": "62.5342"
-      }
+    id: 5,
+    name: "Chelsey Dietrich",
+    username: "Kamren",
+    email: "Lucio_Hettinger@annie.ca",
+    address: {
+      street: "Skiles Walks",
+      suite: "Suite 351",
+      city: "Roscoeview",
+      zipcode: "33263",
+      geo: {
+        lat: "-31.8129",
+        lng: "62.5342",
+      },
     },
-    "phone": "(254)954-1289",
-    "website": "demarco.info",
-    "company": {
-      "name": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution",
-      "bs": "revolutionize end-to-end systems"
-    }
+    phone: "(254)954-1289",
+    website: "demarco.info",
+    company: {
+      name: "Keebler LLC",
+      catchPhrase: "User-centric fault-tolerant solution",
+      bs: "revolutionize end-to-end systems",
+    },
   },
   {
-    "id": 6,
-    "name": "Mrs. Dennis Schulist",
-    "username": "Leopoldo_Corkery",
-    "email": "Karley_Dach@jasper.info",
-    "address": {
-      "street": "Norberto Crossing",
-      "suite": "Apt. 950",
-      "city": "South Christy",
-      "zipcode": "23505-1337",
-      "geo": {
-        "lat": "-71.4197",
-        "lng": "71.7478"
-      }
+    id: 6,
+    name: "Mrs. Dennis Schulist",
+    username: "Leopoldo_Corkery",
+    email: "Karley_Dach@jasper.info",
+    address: {
+      street: "Norberto Crossing",
+      suite: "Apt. 950",
+      city: "South Christy",
+      zipcode: "23505-1337",
+      geo: {
+        lat: "-71.4197",
+        lng: "71.7478",
+      },
     },
-    "phone": "1-477-935-8478 x6430",
-    "website": "ola.org",
-    "company": {
-      "name": "Considine-Lockman",
-      "catchPhrase": "Synchronised bottom-line interface",
-      "bs": "e-enable innovative applications"
-    }
+    phone: "1-477-935-8478 x6430",
+    website: "ola.org",
+    company: {
+      name: "Considine-Lockman",
+      catchPhrase: "Synchronised bottom-line interface",
+      bs: "e-enable innovative applications",
+    },
   },
   {
-    "id": 7,
-    "name": "Kurtis Weissnat",
-    "username": "Elwyn.Skiles",
-    "email": "Telly.Hoeger@billy.biz",
-    "address": {
-      "street": "Rex Trail",
-      "suite": "Suite 280",
-      "city": "Howemouth",
-      "zipcode": "58804-1099",
-      "geo": {
-        "lat": "24.8918",
-        "lng": "21.8984"
-      }
+    id: 7,
+    name: "Kurtis Weissnat",
+    username: "Elwyn.Skiles",
+    email: "Telly.Hoeger@billy.biz",
+    address: {
+      street: "Rex Trail",
+      suite: "Suite 280",
+      city: "Howemouth",
+      zipcode: "58804-1099",
+      geo: {
+        lat: "24.8918",
+        lng: "21.8984",
+      },
     },
-    "phone": "210.067.6132",
-    "website": "elvis.io",
-    "company": {
-      "name": "Johns Group",
-      "catchPhrase": "Configurable multimedia task-force",
-      "bs": "generate enterprise e-tailers"
-    }
+    phone: "210.067.6132",
+    website: "elvis.io",
+    company: {
+      name: "Johns Group",
+      catchPhrase: "Configurable multimedia task-force",
+      bs: "generate enterprise e-tailers",
+    },
   },
   {
-    "id": 8,
-    "name": "Nicholas Runolfsdottir V",
-    "username": "Maxime_Nienow",
-    "email": "Sherwood@rosamond.me",
-    "address": {
-      "street": "Ellsworth Summit",
-      "suite": "Suite 729",
-      "city": "Aliyaview",
-      "zipcode": "45169",
-      "geo": {
-        "lat": "-14.3990",
-        "lng": "-120.7677"
-      }
+    id: 8,
+    name: "Nicholas Runolfsdottir V",
+    username: "Maxime_Nienow",
+    email: "Sherwood@rosamond.me",
+    address: {
+      street: "Ellsworth Summit",
+      suite: "Suite 729",
+      city: "Aliyaview",
+      zipcode: "45169",
+      geo: {
+        lat: "-14.3990",
+        lng: "-120.7677",
+      },
     },
-    "phone": "586.493.6943 x140",
-    "website": "jacynthe.com",
-    "company": {
-      "name": "Abernathy Group",
-      "catchPhrase": "Implemented secondary concept",
-      "bs": "e-enable extensible e-tailers"
-    }
+    phone: "586.493.6943 x140",
+    website: "jacynthe.com",
+    company: {
+      name: "Abernathy Group",
+      catchPhrase: "Implemented secondary concept",
+      bs: "e-enable extensible e-tailers",
+    },
   },
   {
-    "id": 9,
-    "name": "Glenna Reichert",
-    "username": "Delphine",
-    "email": "Chaim_McDermott@dana.io",
-    "address": {
-      "street": "Dayna Park",
-      "suite": "Suite 449",
-      "city": "Bartholomebury",
-      "zipcode": "76495-3109",
-      "geo": {
-        "lat": "24.6463",
-        "lng": "-168.8889"
-      }
+    id: 9,
+    name: "Glenna Reichert",
+    username: "Delphine",
+    email: "Chaim_McDermott@dana.io",
+    address: {
+      street: "Dayna Park",
+      suite: "Suite 449",
+      city: "Bartholomebury",
+      zipcode: "76495-3109",
+      geo: {
+        lat: "24.6463",
+        lng: "-168.8889",
+      },
     },
-    "phone": "(775)976-6794 x41206",
-    "website": "conrad.com",
-    "company": {
-      "name": "Yost and Sons",
-      "catchPhrase": "Switchable contextually-based project",
-      "bs": "aggregate real-time technologies"
-    }
+    phone: "(775)976-6794 x41206",
+    website: "conrad.com",
+    company: {
+      name: "Yost and Sons",
+      catchPhrase: "Switchable contextually-based project",
+      bs: "aggregate real-time technologies",
+    },
   },
   {
-    "id": 10,
-    "name": "Clementina DuBuque",
-    "username": "Moriah.Stanton",
-    "email": "Rey.Padberg@karina.biz",
-    "address": {
-      "street": "Kattie Turnpike",
-      "suite": "Suite 198",
-      "city": "Lebsackbury",
-      "zipcode": "31428-2261",
-      "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
-      }
+    id: 10,
+    name: "Clementina DuBuque",
+    username: "Moriah.Stanton",
+    email: "Rey.Padberg@karina.biz",
+    address: {
+      street: "Kattie Turnpike",
+      suite: "Suite 198",
+      city: "Lebsackbury",
+      zipcode: "31428-2261",
+      geo: {
+        lat: "-38.2386",
+        lng: "57.2232",
+      },
     },
-    "phone": "024-648-3804",
-    "website": "ambrose.net",
-    "company": {
-      "name": "Hoeger LLC",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
-    }
-  }
-]
+    phone: "024-648-3804",
+    website: "ambrose.net",
+    company: {
+      name: "Hoeger LLC",
+      catchPhrase: "Centralized empowering task-force",
+      bs: "target end-to-end models",
+    },
+  },
+];
 
 // users.forEach((user, index)=>{
 //   console.log(`${index}.  ${user.name} ~ ${user.email}`)
@@ -412,8 +390,6 @@ const users = [
 // const companyName = users.every((user)=>user.company.name)
 // console.log(companyName)
 
-
-
 //*******************************************#some biri eger varsa true qyatarir ****************************
 
 // const endWeb = users.some((user)=>{
@@ -421,14 +397,11 @@ const users = [
 // })
 // console.log(endWeb)
 
-
-
 // const endEmail = users.some((user)=>{
 //   return user.email.endsWith(".net")
 // })
 
 // console.log(endEmail)
-
 
 //******************************************#filter array qayatrir***************************** */
 
@@ -438,22 +411,17 @@ const users = [
 //   console.log(user.website)
 // })
 
-
 // users.filter((user)=>user.website.endsWith(".org")).forEach((user)=>console.log(user.website))
-
-
 
 //******************************************************#map******************** */
 
 // const email = users.map((user)=> user.email)
-  
+
 // console.log(email)
 
 // const company = users.map((user)=> user)
-  
+
 // console.log(company)
-
-
 
 // function capitalizeWords(str) {
 //   return str
@@ -469,7 +437,6 @@ const users = [
 //  JavaScript And TypeScript
 // console.log(capitalizeWords('JAVASCRIPT AND TYPESCRIPT'));
 
-
 //*******************************************************#11.05.2023----Task1********************
 // let arrNumber =[1,2,3,4,5,6,7,8,9,10]
 // let newArr =[]
@@ -480,24 +447,115 @@ const users = [
 
 // let arrNumber =[1,2,3,4,5,6,7,8,9,10]
 // let userNum = prompt('enter the number:')
-
-
 // let someNum = arrNumber.some((mmm)=>{
 //   return mmm.toString().includes(userNum)
 
 // })
 // console.log(someNum)
 
-
 // let someNum =arrNumber.some((userNum)=>{
 // return userNum
 // })
 // console.log(someNum)
 
+// let arrNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let userNum = 2;
 
-let arrNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let userNum = 2;
+// let isNumInArray = arrNumber.some(number => number === userNum);
 
-let isNumInArray = arrNumber.some(number => number === userNum);
+// console.log(isNumInArray);
 
-console.log(isNumInArray);
+//***********************************F I L T E R********************* */
+
+// users.filter((user)=>{
+//   return user.phone.startsWith("1")
+// }).forEach((user)=>{
+//   console.log(`Name: ${user.name} , Email: ${user.email}`)
+// })
+
+//****************************************  M A P ***************************** */
+// const newArr = users.map((user)=>{
+//  let obj ={
+//   id: user.id,
+//   name: user.name,
+//   phone: user.phone,
+//   companyName: user.company.name
+//  }
+//  return obj
+// })
+
+// console.log(newArr);
+
+//************************************** Filter ***********************************************
+
+// users.filter((user)=>{
+//   return user.address.geo.lat<=-30 && user.address.geo.lat>=-60
+// }).forEach((user)=>{
+//   console.log(`City: ${user.address.city} `)
+// })
+
+// users.filter((user)=>{
+//   return user.address.geo.lat.startsWith(-71) && user.address.geo.lng.startsWith(71)
+// }).forEach((user)=>{
+//   console.log(`City: ${user.address.city} `)
+// })
+
+//*********************************************** F I N D ******************************************
+//  const user = users.find((user)=>{
+//   return Math.ceil(user.address.geo.lat)===-71 && Math.floor(user.address.geo.lng)===71
+// })
+// console.log(user);
+
+
+
+
+
+//***************************************************** R E D U C E ********************************
+
+
+//************* Even Numbers */
+
+const numbers = [11, 14, 23, 24, 26, 28, 87, 67, 66, 64, 69, 98, 8, 76, 45, 76, 34, 49];
+
+const numEven = numbers.reduce((a, b) => {
+  if (b % 2 === 0) {
+    return a + 1;
+  } else {
+    return a;
+  }
+}, 0);
+console.log(numEven);
+
+
+
+
+
+const numEvenAndOdd = numbers.reduce(
+  (a, b) => {
+    if (b % 2 === 0) {
+     a[0]++;
+    } else {
+   a[1]++;
+    }
+    return a;
+  },
+  [0, 0]
+); //[cut , tek]
+
+console.log(numEvenAndOdd);
+
+
+
+const numEvenAndOddobj = numbers.reduce(
+  (a, b) => {
+    if (b % 2 === 0) {
+     a.even++;
+    } else {
+   a.odd++;
+    }
+    return a;
+  },
+ {even : 0, odd: 0}
+); //[cut , tek]
+
+console.log(numEvenAndOddobj);
