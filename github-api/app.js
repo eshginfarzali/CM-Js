@@ -14,10 +14,12 @@ function getUserProfile(username) {
   const apiUrl = `https://api.github.com/users/${username}`;
   
   axios.get(apiUrl)
-    .then((response) => {
-      const profileData = response.data;
-      const avatarUrl = profileData.avatar_url;
-      displayAvatar(avatarUrl);
+  .then((response) => {
+    const profileData = response.data;
+    const avatarUrl = profileData.avatar_url;
+    displayAvatar(avatarUrl);
+    // const nameUrl =profileData.name;
+      // displayName( profileName);
     })
     .catch((error) => {
       displayError(error.message);
