@@ -241,7 +241,7 @@
 //       'Mart',
 //       'Aprel',
 //       'May',
-//       'İyun',
+//       'İyun',  
 //       'İyul',
 //       'Avqust',
 //       'Sentyabr',
